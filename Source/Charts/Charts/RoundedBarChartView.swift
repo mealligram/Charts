@@ -29,6 +29,10 @@ open class RoundedBarChartView: BarLineChartViewBase, BarChartDataProvider
     
         renderer = RoundedBarChartRenderer(dataProvider: self, animator: chartAnimator, viewPortHandler: viewPortHandler, radius: barRadius)
     }
+
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     internal override func initialize()
     {

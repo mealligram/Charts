@@ -357,7 +357,7 @@ open class RoundedBarChartRenderer: BarLineScatterCandleBubbleRenderer
                             byRoundingCorners:[.topRight, .topLeft],
                             cornerRadii: CGSize(width: self.barCornerRadius * 2, height:  self.barCornerRadius * 2))
                 context.addPath(bezierPath.cgPath)
-                context.fill(barRect)
+                context.drawPath(using: .fill)
             }
         }
         
@@ -390,7 +390,7 @@ open class RoundedBarChartRenderer: BarLineScatterCandleBubbleRenderer
                             cornerRadii: CGSize(width: self.barCornerRadius * 2, height:  self.barCornerRadius * 2))
            
             context.addPath(bezierPath.cgPath)
-            context.fill(barRect)
+            context.drawPath(using: .fill)
             
             if drawBorder
             {
@@ -758,7 +758,7 @@ open class RoundedBarChartRenderer: BarLineScatterCandleBubbleRenderer
                             byRoundingCorners:[.topRight, .topLeft],
                             cornerRadii: CGSize(width: self.barCornerRadius * 2, height:  self.barCornerRadius * 2))
                 context.addPath(bezierPath.cgPath)
-                context.fill(barRect)
+                context.drawPath(using: .fill)
             }
         }
     }
