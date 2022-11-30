@@ -43,7 +43,7 @@ open class RoundedBarChartRenderer: BarLineScatterCandleBubbleRenderer
     private typealias Buffer = [CGRect]
     
     @objc open weak var dataProvider: BarChartDataProvider?
-    internal let barCornerRadius = CGFloat(10.0)
+    internal let barCornerRadius: CGFloat
     
     @objc public init(dataProvider: BarChartDataProvider, animator: Animator, viewPortHandler: ViewPortHandler, radius: CGFloat)
     {
