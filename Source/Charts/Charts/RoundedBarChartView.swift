@@ -25,7 +25,7 @@ open class RoundedBarChartView: BarLineChartViewBase, BarChartDataProvider
 
     public init(radius: CGFloat) {
         self.barRadius = radius
-        super.init(frame: frame)
+        super.init(frame: .zero)
     
         renderer = RoundedBarChartRenderer(dataProvider: self, animator: chartAnimator, viewPortHandler: viewPortHandler, radius: barRadius)
     }
